@@ -1,0 +1,44 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <AssemblyName>Asset Registry Editor</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <OutputType>WinExe</OutputType>
+    <UseWindowsForms>True</UseWindowsForms>
+    <TargetFramework>net481</TargetFramework>
+    <Prefer32Bit>True</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>12.0</LangVersion>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <RootNamespace />
+    <ApplicationIcon>Asset_Registry_Editor\Resources\app.ico</ApplicationIcon>
+    <NuGetAudit>False</NuGetAudit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Asset_Registry_Editor\Resources\app.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Asset_Registry_Editor\Libs\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="QueenIO">
+      <HintPath>Asset_Registry_Editor\Libs\QueenIO.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="UAssetAPI">
+      <HintPath>Asset_Registry_Editor\Libs\UAssetAPI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>

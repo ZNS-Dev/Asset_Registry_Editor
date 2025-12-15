@@ -100,9 +100,17 @@ public class AREditor : Form
     private void BTNselectarpath3_Click(object sender, EventArgs e)
     {
         Fonctions.SelectBinFile(out var BinFilePath);
-        FileNameSave = BinFilePath;
-        OpenARInRTB(BinFilePath);
+
+        if (!string.IsNullOrWhiteSpace(BinFilePath))
+        {
+            FileNameSave = BinFilePath;
+            OpenARInRTB(BinFilePath);
+            BTNsavefiletojson.Enabled = true;
+            BTNsavefiletobin.Enabled = true;
+            BTNsearch.Enabled = true;
+            TBsearch.Enabled = true;
         }
+    }
 
     private void BTNsavefiletojson_Click(object sender, EventArgs e)
     {

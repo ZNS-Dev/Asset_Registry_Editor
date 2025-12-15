@@ -19,8 +19,7 @@
 ---
 
 <h1 align="center">
-<img width="720" height="470" alt="Capture d’écran 2025-11-29 203301" src="Capture d’écran 2025-12-15 223927" src="https://github.com/user-attachments/assets/4410e071-ccf8-47c4-890e-225a6900417d" />
-" />
+<img width="768" height="643" alt="Capture d’écran 2025-12-15 223927" src="https://github.com/user-attachments/assets/123870a9-6936-40a9-8beb-3ba1f4ee50ad" />
 <p align="center">
 
 ## ✨ Features & Improvements
